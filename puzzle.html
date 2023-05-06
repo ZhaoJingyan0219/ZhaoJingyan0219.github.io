@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>猜字母游戏</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>猜字母游戏</h1>
+	<p>请猜测随机生成的英文字母是26个字母中的哪一个，你有10次机会。</p>
+	<p>你已经猜测了<span id="count">0</span>次。</p>
+	<form>
+		<label for="guess">你的猜测：</label>
+		<input type="text" id="guess" name="guess" maxlength="1">
+		<input type="button" value="提交" onclick="guessLetter()">
+	</form>
+	<p id="result"></p>
+	<script src="puzzle.js"></script>
+</body>
+</html>
